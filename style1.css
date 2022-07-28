@@ -1,0 +1,161 @@
+html,body{
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+		}
+		.wrapper{
+			margin: 0;
+			padding: 0;
+		}
+		.image{
+			height: 100%;
+			width: 100%;
+		}
+		.icon{
+			position: absolute;
+  			top: 2%;
+  			left: 2%;
+  			color: blue;
+		}
+		.title{
+			font-family: "Fredoka One",cursive;
+			position: absolute;
+  			top: 1%;
+  			left: 1.5%;
+  			color: blue;
+  			font-weight: bolder;
+  			font-size: 30px;  			
+		}
+		.head{
+			font-family: Verdana;
+			font-size: 	30px;
+		}
+		.boom{
+			font-family: "Fredoka One",cursive;
+			font-weight: bolder;
+			color: blue;
+		}		
+		.textBox{
+			border-radius: 7px;
+			height: 4rem;
+			font-size: 20px;
+			outline: none;
+			border: 2px solid #dbd8d7;		
+			padding-left: 2.8rem;	
+		}
+		
+		.btn{
+   			border-radius: 7px;
+   		}
+		.textBox:focus {
+			outline: none;
+		    border:1px solid blue;
+		    box-shadow: 0 0 10px #719ECE;
+  		}
+  		.formLogo{
+  			position: absolute;
+  			top: 1.5em;
+  			left: 1.2em;
+  		}
+  		.logo{
+  			position: absolute;
+  			top: 0.4em;
+  			left: 0.5em;
+  			/*z-index:3;*/
+  		}
+  		.form-outer{
+  			position: relative;
+  		}
+  		.navbar{
+  			box-shadow: 0 0 10px #719ECE;	
+  			height: 3.5rem;
+  			width: 	100%;
+  			display: 	none;
+  			padding-top: 1rem;
+   		}
+   		.navbar button{
+   			background-color: #f0eceb;
+   			border: none;
+   			border-radius: 100%;
+   			color: blue;
+   			height: 2.5rem;
+   			width: 2.5rem;
+   			margin-top: -0.5rem;
+   			margin-right: 1rem;
+   		}
+
+   		.text-center{
+   			text-align: center;
+   		}
+   		.text-left{
+   			text-align: left;
+   		}
+   		.text-right{
+   			text-align: right;
+   		}
+   		.float-right{
+   			float: right;
+   		}
+   		.wd-100{
+   			width: 100%;
+   		}
+   		.margin-1{
+   			margin-top: 1rem;
+   		}
+   		.mr-1{
+   			margin-right: 1rem;
+   		}
+   		.wd-50{
+   			width:50%;
+   		}
+   		.desknav button{
+   			border-radius: 50px;
+   		}
+   		.login{
+   			padding-left: 28%;
+   			padding-right: 25%;
+   		}
+   		.cl-gray{
+   			color: ;
+   		}
+   		.plain-link{
+   			text-decoration: none;
+   			color: black;
+   			font-weight: bold;
+   		}
+   		.mb{
+   				height: 100vh;
+   		}
+
+   		@media screen and (max-width: 720px){
+   			.wd-50{
+   				width: 80%;
+   			}
+   			.login{
+   				padding-left: 9%;
+   				padding-right: 5%;
+   			}
+   			.mb{
+   				height: 100vh;
+   				width: 100%;
+   			}
+   			body{
+   				overflow-x: hidden;
+   				overflow-y: auto;
+   			}
+   		}
+   		@media screen and (min-width: 720px ) and (max-width: 1024px){
+   			.login{
+   				padding-left: 22%;
+   				padding-right: 20%;
+   			}
+   			.mb{
+   				height: 100vh;
+   				width: 100%;
+   			}
+   			body{
+   				overflow-x: hidden;
+   				overflow-y: auto;
+   			}
+   		}
+

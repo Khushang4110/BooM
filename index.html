@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  	<!-- CSS only -->
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  	<!-- JavaScript Bundle with Popper -->
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" type="text/css" href="index.css">
+  	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	<title>BooM</title>
+</head>
+<body>
+	<div class="wrapper">
+		<navbar class="navbar d-xl-none d-lg-none d-block">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="title float-left" style="flex-shrink: 1;"><i class="fas fa-american-sign-language-interpreting"></i> BooM</p>
+					<a class="mr-2 float-right mart-2" style="font-size: 25px;"><i class="fas fa-bars"></i></a>
+					<a class="btn btn-light mr-1 float-right mt-1"><i class="far fa-search fa-xs"></i></a>
+					<a class="btn btn-light mr-1 float-right mt-1"><i class="far fa-comment fa-xs"></i></a>
+				</div>
+			</div>
+		</navbar>
+		<navbar class="navbar1 d-xl-block d-lg-block d-none">
+			<div class="row">
+				<div class="col-2 col-xl-2 col-lg-3 text-center">
+					<p class="title1"><i class="fas fa-american-sign-language-interpreting"></i> BooM</p>
+				</div>
+				<div class="col-3 col-xl-3 col-lg-5">
+					<form>
+						<div class="form-outer">
+							<span class="fa fa-search formLogo" style="color: #bfbfbf;"></span>
+							<input type="text" class="textBox2" placeholder="Start typing to search..." name="txtSearch">
+						</div>
+					</form>
+				</div>
+				<div class="col-3 d-none d-xl-block">
+					<a href="#" class="btn btn-light" role="button"><i class="far fa-home fa-lg"></i></a>
+					<a href="#"class="btn btn-light" role="button"><i class="far fa-american-sign-language-interpreting fa-lg"></i></a>
+					<a href="#" class="btn btn-light" role="button" area-pressed="true"><i class="far fa-video fa-lg"></i></a>
+					<a href="#" class="btn btn-light" role="button" area-pressed="true"><i class="far fa-user fa-lg"></i></a>
+					<a href="#" class="btn btn-light" role="button" area-pressed="true"><i class="far fa-bags-shopping fa-lg"></i></a>
+				</div>
+				<div class="col-4 col-xl-4 col-lg-4 col-md-4 d-block pt-05">
+					<ul class="icon-list">
+						<li class=""><a href="#" id="notification"><i class="far fa-bell fa-lg"></i></a></li>
+						<li class="pl-1"><a href="#"><i class="far fa-comment-alt fa-lg"></i></a></li>
+						<li class="pl-1"><a href="#"><i class="far fa-cog fa-lg fa-spin"></i></a></li>
+						<li class="pl-1"><a href="#"><img src="images/female-profile.png" height="45%" width="45%" class="img"></a></li>
+					</ul>
+				</div>
+				<!-- <div class="col-md-1 border pt-05 text-center">
+					<a href="#"><i class="far fa-bell fa-2x"></i></a>
+				</div>
+				<div class="col-md-1 border pt-05 text-center px-0" style="box-sizing: border-box;">
+					<a href="#"><i class="fal fa-comment-alt fa-2x"></i></a>
+				</div>
+				<div class="col-md-1 border pt-05 text-center px-0">
+					<a href="#"><i class="fal fa-cog fa-2x"></i></a>
+				</div>
+				<div class="col-md-1 border pt-05 text-center">
+					<img src="images/female-profile.png" height="25%" width="25%" class="img-fluid">
+				</div> -->
+			</div>
+		</navbar>
+		<div id="notification-card" class="card px-2 d-none">
+			<div class="card-item">
+				<h6><b class="text-muted">Notifications</b></h6>
+			</div>	
+			<div class="card-item">			
+				<div class="card-element photo">
+					<img src="images/user-8.png">
+				</div>
+				<div class="card-element name">
+					<h6><b>Victor Exrixon</b><span class="text-muted float-right">3 mins ago</span></h6>
+					<p class="text-muted">Liked your Photo</p>
+				</div>
+			</div>
+			<div class="card-item">			
+				<div class="card-element photo">
+					<img src="images/user-9	.png">
+				</div>
+				<div class="card-element name">
+					<h6><b>Emma Watson</b><span class="text-muted float-right">5 mins ago</span></h6>
+					<p class="text-muted">Liked a Post you Shared</p>
+				</div>
+			</div>
+			<div class="card-item">			
+				<div class="card-element photo">
+					<img src="images/user-7.png">
+				</div>
+				<div class="card-element name">
+					<h6><b>Bhago</b><span class="text-muted float-right">8 mins ago</span></h6>
+					<p class="text-muted">Commented on your Post</p>
+				</div>
+			</div>
+			<div class="card-item">			
+				<div class="card-element photo">
+					<img src="images/user-7.png">
+				</div>
+				<div class="card-element name">
+					<h6><b>Bhago</b><span class="text-muted float-right">8 mins ago</span></h6>
+					<p class="text-muted">Commented on your Post</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xl-2 menu">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="list">
+							<ul class="item-list">
+								<li><h6 class="cl-gray">News Feeds</h6></li>
+								<li><a href="#"><div class="icon icon-bg-1"><i class="fas fa-tv-retro fa-lg"></i></div>Newfeed</a></li>
+								<li><a href="#"><div class="icon icon-bg-2"><i class="far fa-tag fa-lg"></i></div>Badges</a></li>
+								<li><a href="#"><div class="icon icon-bg-3"><i class="far fa-browser fa-lg"></i></div>Explore Stories</a></li>
+								<li><a href="#"><div class="icon icon-bg-4"><i class="far fa-user-alt fa-lg"></i></div>Author Profile</a></li>
+								<li><a href="#"><div class="icon icon-bg-1"><i class="far fa-american-sign-language-interpreting fa-lg"></i></div>Popular Groups</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="list">
+							<ul class="item-list">
+								<li><h6 class="cl-gray">More Pages</h6></li>
+								<li><a href="#"><div class="icon1"><i class="fal fa-envelope fa-2x"></i></div>Email Box</a></li>
+								<li><a href="#"><div class="icon1"><i class="fal fa-home-lg-alt fa-2x"></i></div>Near Hotel</a></li>
+								<li><a href="#"><div class="icon1"><i class="fal fa-map-marker-alt fa-2x"></i></div>Latest Events</a></li>
+								<li><a href="#"><div class="icon1"><i class="fal fa-play fa-2x"></i></div>Live Stream</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="list">
+							<ul class="item-list">
+								<li><h6 class="cl-gray">Account</h6></li>
+								<li><a href="#"><div class="icon1"><i class="fal fa-cog fa-2x"></i></div>Settings</a></li>
+								<li><a href="#"><div class="icon1"><i class="fal fa-chart-pie-alt fa-2x"></i></div>Analytics</a></li>
+								<li><a href="#"><div class="icon1"><i class="fal fa-comment-smile fa-2x"></i></div>Chats</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-7 newsfeed">
+				<div class="row">
+					<div class="col-8 storyslider">
+						<div class="story-card icon-bg-1">
+							<div class="story-profile">
+								<a href="#"><i class="fa fa-plus"></i></a>
+								<p>Add Story</p>
+							</div>
+						</div>
+						<div class="story-card">
+							<div class="story-profile">
+								<img src="images/user-1.png">
+								<p>Bhago Jari</p>
+							</div>
+							<img class="" width="100%" height="100%" src="images/s-1.jpg">
+						</div>
+						<div class="story-card">
+							<div class="story-profile">
+								<img src="images/user-2.png">
+								<p>Bhago Jari</p>
+							</div>
+							<img class="" width="100%" height="100%" src="images/s-2.jpg">
+						</div>
+						<div class="story-card">
+							<div class="story-profile">
+								<img src="images/user-3.png">
+								<p>Bhago Jari</p>
+							</div>
+							<img class="" width="100%" height="100%" src="images/s-7.jpg">
+						</div>
+						<div class="story-card">
+							<div class="story-profile">
+								<img src="images/user-4.png">
+								<p>Bhago Jari</p>
+							</div>
+							<img class="" width="100%" height="100%" src="images/s-8.jpg">
+						</div>
+						<div class="story-card">
+							<div class="story-profile">
+								<img src="images/user-5.png">
+								<p>Bhago Jari</p>
+							</div>
+							<img class="" width="100%" height="100%" src="images/s-5.jpg">
+						</div>
+						<div class="story-card">
+							<div class="story-profile">
+								<img src="images/user-6.png">
+								<p>Bhago Jari</p>
+							</div>
+							<img class="" width="100%" height="100%" src="images/s-6.jpg">
+						</div>
+					</div>
+					<div class="col-4 req-col">
+						<div class="card-req">
+							<div class="card-head">
+								<p class="d-inline"><b>Friend Requests</b></p>
+								<a href="#" class="float-right">See All</a>
+							</div>
+							<div class="request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="req-res">
+									<button class="btn btn-primary">Confirm</button>
+									<button class="btn btn-light">Reject</button>
+								</div>
+							</div>
+							<div class="request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="req-res">
+									<button class="btn btn-primary">Confirm</button>
+									<button class="btn btn-light">Reject</button>
+								</div>
+							</div>
+							<div class="request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="req-res">
+									<button class="btn btn-primary">Confirm</button>
+									<button class="btn btn-light">Reject</button>
+								</div>
+							</div>
+						</div>
+						<div class="card-req">
+							<div class="card-head">
+								<p class="d-inline"><b>Friend Suggestions</b></p>
+								<a href="#" class="float-right">See All</a>
+							</div>
+							<div class="con-request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="btnplus">
+									<a href=""><i class="fal fa-arrow-circle-right fa-2x"></i></a>
+								</div>
+							</div>
+							<div class="con-request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="btnplus">
+									<a href=""><i class="fal fa-arrow-circle-right fa-2x"></i></a>
+								</div>
+							</div>
+							<div class="con-request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="btnplus">
+									<a href=""><i class="fal fa-arrow-circle-right fa-2x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col-xl-2 req-col">
+				<div class="row">
+					<div class="col-12">
+						<div class="card-req">
+							<div class="card-head">
+								<p class="d-inline"><b>Friend Requests</b></p>
+								<a href="#" class="float-right">See All</a>
+							</div>
+							<div class="request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="req-res">
+									<button class="btn btn-primary">Confirm</button>
+									<button class="btn btn-light">Reject</button>
+								</div>
+							</div>
+							<div class="request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="req-res">
+									<button class="btn btn-primary">Confirm</button>
+									<button class="btn btn-light">Reject</button>
+								</div>
+							</div>
+							<div class="request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="req-res">
+									<button class="btn btn-primary">Confirm</button>
+									<button class="btn btn-light">Reject</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="card-req">
+							<div class="card-head">
+								<p class="d-inline"><b>Friend Suggestions</b></p>
+								<a href="#" class="float-right">See All</a>
+							</div>
+							<div class="con-request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="btnplus">
+									<a href=""><i class="fal fa-arrow-circle-right fa-2x"></i></a>
+								</div>
+							</div>
+							<div class="con-request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="btnplus">
+									<a href=""><i class="fal fa-arrow-circle-right fa-2x"></i></a>
+								</div>
+							</div>
+							<div class="con-request">
+								<div class="d-inline-block image">
+									<img src="images/user-1.png">	
+								</div>
+								<div class="reqname">
+									<h6>Bhago Jari</h6>
+									<h6 class="text-muted">12 mutual friends</h6>
+								</div>
+								<div class="btnplus">
+									<a href=""><i class="fal fa-arrow-circle-right fa-2x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>	
+	</div>
+	<script type="text/javascript">
+		$(document).on('click','#notification',function(e){
+			if($('#notification-card').hasClass("d-none")){
+				$("#notification-card").removeClass("d-none");
+			}
+			else{
+				$("#notification-card").addClass("d-none");	
+			}
+		});
+	</script>
+</body>
+</html>
